@@ -31,7 +31,7 @@ const createToken = (name) => {
 const app = express();
 app.use(express.json());
 app.use(cors(corsOptions));
-const port = 3005;
+const port = 3000;
 
 app.get("/getToken", (req, res) => {
   const { name } = req.query;
